@@ -1,51 +1,84 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
-	<head>
-		<meta charset="utf-8" />
-	    <title>Notre groupe</title>
-		<meta name="description" content="Page de présentation de notre groupe" />
-		<meta name="keywords" content="about us, presentation" />
-        <link rel="stylesheet" type="text/css" href="styleE.css" /> 
-	</head>
-    
-    <body>
-        <header>
-            <h1>LA CYBERSECURITE</h1>
-            <nav>
-                <ul>
-                    <li class="select">Notre groupe</li>
-                    <li>Cybersécurité</li>
-                    <li>Les failles</li>
-                    <li>Hackers</li>
-                    <li>Lexique</li>
-                </ul>
-            </nav>
-        </header>
-        
-        <main>
-            <h2>Présentation du groupe</h2>
-            
-            <section>
-                <article>
-                <!-- Mettre cette partie sur 6 colonnes, avec une colonne vide à gauche -->
-                    <h3>Bienvenue sur notre site !</h3>
-                    <p>
-                        Tout d’abord, une petite présentation : <br />
-                        Nous sommes trois étudiants en première année à l’IUT de Lannion, département Informatique. Notre équipe est composée de Hoël GOYAT, d’Enora MORVAN et de Clément QUÉRÉ. Ce site est le résultat de notre projet de premier semestre. Nous l’avons conçu de A à Z, en passant par le choix du thème, l’arborescence, le contenu, la charte graphique, mais également la conception de ce dernier. Nous sommes arrivé à ce résultat grâce à l’aide de nos encadrants ainsi que nos différentes aptitudes personnelles. <br />
-                        Nous espérons que ce dernier vous plaira et saura répondre à vos questions. Nous vous souhaitons une bonne visite !
-                    </p>
-                </article>
-            
-                <figure>
-                <!--Mettre cette partie sur les 5 colonnes restantes -->
-                    <img src="Images/carre.png" alt="Photo de Clément" title="Clément" width="180" height="180" />
-                    <figcaption>Clément</figcaption>
-                    <img src="Images/carre.png" alt="Photo de Clément" title="Clément" width="180" height="180" />
-                    <figcaption>Clément</figcaption>
-                    <img src="Images/carre.png" alt="Photo de Clément" title="Clément" width="180" height="180" />
-                    <figcaption>Clément</figcaption>
-                </figure>
-            </section>
-        </main>
-    </body>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Notre groupe</title>
+    <meta name="description" content="Page de présentation de notre groupe" />
+    <meta name="keywords" content="about us, presentation" />
+    <!--Pas sûr que ceci soit utile ou inutile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Déclaration bootstrap-->
+    <link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styleE.css" />
+</head>
+
+<body>
+    <header>
+        <h1>LA CYBERSECURITE</h1>
+        <nav>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#1">Notre groupe</a></li>
+                <li><a data-toggle="tab" href="#2">Cybersécurité</a></li>
+                <li><a data-toggle="tab" href="#3">Les failles</a></li>
+                <li><a data-toggle="tab" href="#4">Hackers</a></li>
+                <li><a data-toggle="tab" href="#5">Lexique</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="tab-content">
+            <div id="1" class="tab-pane fade in active">
+                <!-- Section pour l'article du groupe-->
+                <h2>Présentation du groupe</h2>
+                <section class="col-md-1"></section><!--supprimer ça quand on se souviendra comment faire un vide correctement-->
+                <section class="col-md-6">
+                    <article>
+                        <!-- Mettre cette partie sur 6 colonnes, avec une colonne vide à gauche -->
+                        <h3>Bienvenue sur notre site !</h3>
+                        <p>
+                            Tout d’abord, une petite présentation : <br /> Nous sommes trois étudiants en première année à l’IUT de Lannion, département Informatique. Notre équipe est composée de Hoël GOYAT, d’Enora MORVAN et de Clément QUÉRÉ. Ce site est le résultat de notre projet de premier semestre. Nous l’avons conçu de A à Z, en passant par le choix du thème, l’arborescence, le contenu, la charte graphique, mais également la conception de ce dernier. Nous sommes arrivé à ce résultat grâce à l’aide de nos encadrants ainsi que nos différentes aptitudes personnelles. <br /> Nous espérons que ce dernier vous plaira et saura répondre à vos questions. Nous vous souhaitons une bonne visite !
+                        </p>
+                    </article>
+
+                    <figure class="col-md-5">
+                        <!--Mettre cette partie sur les 5 colonnes restantes -->
+                        <img src="Images/carre.png" alt="Photo de Clément" title="Clément" width="180" height="180" />
+                        <figcaption>Clément</figcaption>
+                        <img src="Images/carre.png" alt="Photo de Clément" title="Clément" width="180" height="180" />
+                        <figcaption>Clément</figcaption>
+                        <img src="Images/carre.png" alt="Photo de Clément" title="Clément" width="180" height="180" />
+                        <figcaption>Clément</figcaption>
+                    </figure>
+                </section>
+            </div>
+
+            <div id="2" class="tab-pane fade">
+                <!--Section pour la cybersécurité-->
+                <p>Test 2</p>
+            </div>
+
+            <div id="3" class="tab-pane fade">
+                <!--Section pour les failles-->
+                <p>Test 3</p>
+            </div>
+
+            <div id="4" class="tab-pane fade">
+                <!--Section pour les hackers-->
+                <p>Test 4</p>
+            </div>
+
+            <div id="5" class="tab-pane fade">
+                <!--Section pour le Lexique-->
+                <p>Test 5</p>
+            </div>
+
+
+        </div>
+    </main>
+</body>
+
 </html>

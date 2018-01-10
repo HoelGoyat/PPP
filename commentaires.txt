@@ -1,0 +1,7 @@
+Lien vers le fonctionnement des tab panes (Toggleable / Dynamic Tabs) :
+https://www.w3schools.com/bootstrap/bootstrap_tabs_pills.asp
+exemple:
+https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_tabs_dynamic&stacked=h
+
+Lien vers la bonne version du bootstrap:
+https://blog.getbootstrap.com/2016/07/25/bootstrap-3-3-7-released/
