@@ -1,46 +1,65 @@
-body, header, main, footer, nav ul
-{
-    margin:0;
-    padding:0;
+nav li {
+    display: inline-block;
+    margin: 0;      /*MODIFICATION: mise à 0*/
+    padding: 0;     /*MODIFICATION: mise à 0*/
 }
 
-body
-{
-    background-color: #F2F2F2;
-}
-
-header, footer
-{
-    background-color: #1875C7;
-}
-
-header
-{
+header {
+    background-color: #1875c7;
     text-align: center;
     color: #F2F2F2;
     height: 151px;
 }
 
-nav ul 
-{
-    list-style-type: none;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2
+}
+
+nav {
+    display: inline-flex;    
+}
+
+
+h2 {
+    text-align: center;
+}
+
+/*MODIFICATION: suppression*/
+
+figure img {
     float: right;
 }
 
-nav li 
-{
-    display: inline-block;
-    margin: auto 5px;
-    padding: 10px 10px;
+para {
+    color : #000;
 }
 
-.active
-{
-    background-color: #F2F2F2;
-    color: #1875C7;
+/*MODIFICATION: navigation*/
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #1875c7;
+  cursor: default;
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
 }
 
-main 
-{
-    text-align: center;
+.nav-tabs > li > a{
+  color: #f2f2f2;
+  cursor: default;
+  background-color: #1875C7;
+  border: 0 solid #fff;
+  border-bottom-color: transparent;
+}
+
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus {
+  color: #1875c7;
+  cursor: default;
+  background-color: #f2f2f2;
+  border: 0 solid #ddd;
+  border-bottom-color: transparent;
 }

@@ -10,24 +10,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Déclaration bootstrap-->
     <link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap.css" />
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="styleE.css" />
+    <link rel="stylesheet" type="text/css" href="styleC.css" />
 </head>
 
 <body>
-    <header>
-        <h1>LA CYBERSECURITE</h1>
-        <nav>
-            <ul class="nav nav-tabs">
-                <li class="active"><a data-toggle="tab" href="#1">Notre groupe</a></li>
-                <li><a data-toggle="tab" href="#2">Cybersécurité</a></li>
-                <li><a data-toggle="tab" href="#3">Les failles</a></li>
-                <li><a data-toggle="tab" href="#4">Hackers</a></li>
-                <li><a data-toggle="tab" href="#5">Lexique</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container-fluid"><!--MODIFICATION: ajout des colonnes-->
+        <header class="row">
+            <div class="col-md-1"></div>
+            <img src="Logo_cybersecurite.png" height="175" class="col-md-2"/> <!--MODIFICATION: ajout du logo-->
+            <div class="col-md-7">
+                <h1>LA CYBERSECURITE</h1>
+                <nav>
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#1">Notre groupe</a></li>
+                        <li><a data-toggle="tab" href="#2">Cybersécurité</a></li>
+                        <li><a data-toggle="tab" href="#3">Les failles</a></li>
+                        <li><a data-toggle="tab" href="#4">Hackers</a></li>
+                        <li><a data-toggle="tab" href="#5">Lexique</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
 
     <main>
         <div class="tab-content">
