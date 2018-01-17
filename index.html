@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Notre groupe</title>
+    <meta name="description" content="Page de présentation de notre groupe" />
+    <meta name="keywords" content="about us, presentation" />
+    <!--Pas sûr que ceci soit utile ou inutile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Déclaration bootstrap-->
+    <link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap.css" />
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!--MODIFICATION: ajout des colonnes-->
+        <header class="row">
+            <div class="col-md-1"></div>
+            <img src="Logo_cybersecurite.png" height="175" width="175" class="col-md-2" />
+            <!--MODIFICATION: ajout du logo-->
+            <div class="col-md-7">
+                <h1>LA CYBERSECURITE</h1>
+                <nav>
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#page1">Notre groupe</a></li>
+                        <li><a data-toggle="tab" href="#page2">Cybersécurité</a></li>
+                        <li><a data-toggle="tab" href="#page3">Les failles</a></li>
+                        <!-- Le dropdown ne marche pas pour l'instant
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#page3">Les failles<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#faille1">Submenu 1-1</a></li>
+                                <li><a href="#faille2">Submenu 1-2</a></li>
+                            </ul>
+                        </li>
+                            -->
+                        <li><a data-toggle="tab" href="#page4">Hackers</a></li>
+                        <li><a data-toggle="tab" href="#page5">Lexique</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <div class="tab-content">
+            <div id="page1" class="tab-pane fade in active">
+                <!-- Section pour l'article du groupe
+                    Changement des col prévue pour faire moins compact et plus agréable à lire-->
+                <h2>Présentation du groupe</h2>
+                <section class="col-md-offset-2 col-md-8">
+                    <article>
+                        <!-- Mettre cette partie sur 6 colonnes, avec une colonne vide à gauche -->
+                        <h3>Bienvenue sur notre site !</h3>
+                        <p>
+                            Tout d’abord, une petite présentation : <br /> Nous sommes trois étudiants en première année à l’IUT de Lannion, département Informatique. Notre équipe est composée de Hoël GOYAT, d’Enora MORVAN et de Clément QUÉRÉ. Ce site est le résultat de notre projet de premier semestre. Nous l’avons conçu de A à Z, en passant par le choix du thème, l’arborescence, le contenu, la charte graphique, mais également la conception de ce dernier. Nous sommes arrivé à ce résultat grâce à l’aide de nos encadrants ainsi que nos différentes aptitudes personnelles.
+                        </p>
+                        <p>
+                            Nous espérons que ce dernier vous plaira et saura répondre à vos questions. Nous vous souhaitons une bonne visite !
+                        </p>
+                    </article>
+
+                    <figure class="col-md-5">
+                        <!--Mettre cette partie sur les 5 colonnes restantes -->
+                        <img src="Images/carre.png" alt="Photo de Clément" title="Clément" width="180" height="180" />
+                        <figcaption>Clément</figcaption>
+                        <img src="Images/carre.png" alt="Photo de Clément" title="Clément" width="180" height="180" />
+                        <figcaption>Clément</figcaption>
+                        <img src="Images/carre.png" alt="Photo de Clément" title="Clément" width="180" height="180" />
+                        <figcaption>Clément</figcaption>
+                    </figure>
+                </section>
+            </div>
+
+            <div id="page2" class="tab-pane fade">
+                <!--Section pour la cybersécurité
+                    Changement des col prévue pour faire moins compact et plus agréable à lire-->
+                <section class="col-md-offset-2 col-md-8">
+                    <h2>Qu'est-ce que la cybersécurité ?</h2>
+                    <p>
+                        Il s’agit de l’ensemble des sécurités qui permettent de protéger les éléments logiciels, matériels, les informations et les humains d’un système. La cyber-sécurité ce n’est donc pas seulement la protection des les partie logiciels d’un système mais aussi les systèmes opérateurs et les différentes machines sur lesquelles ils sont utilisés ainsi que les utilisateurs de ce système qui sont eux aussi sujets à des faiblesses.
+                    </p>
+                    <p>
+                        La cybersécurité repose sur trois principes que l’on peut résumer par l’acronyme DIC (Disponibilité - Intégralité - Confidentialité) : les organisations et autres clients pour qui la protection va s’effectuer travaillent en partant du principe que leur système est disponible à tout moment, il faut donc être capable de maintenir la disponibilité de ce système informatique. De plus, il faut vérifier que l’intégralité des données est bien protégée ainsi que vérifier qu’elles sont toutes complètes et exactes. Enfin, la confidentialité consiste à gérer les différentes permissions d’accès à certaines données pour tel ou tel utilisateur plutôt qu’un autre. Ces trois points sont essentiels pour le bon fonctionnement de l’organisation pour laquelle la sécurité doit être vérifiée.
+                    </p>
+                    <p>
+                        Sur ce site, nous allons essayer de nous restreindre à l’aspect de faille, en tentant de montrer quelles sont-elles et comment les corriger pour que les trois principes précédents soient toujours respectés.
+                    </p>
+                    <!-- Rajout d'un logo pour qu'on puisse apprécier le travail de Clément, et surtout pour avoir une barre de défillement sur toute les pages-->
+                    <div align="center">
+                        <img src="Logo_cybersecurite%20-%20Couleurs%20Originales.png" height="500" width="500">
+                    </div>
+
+                </section>
+            </div>
+
+            <div id="page3" class="tab-pane fade">
+                <!--Section pour les failles
+                    Changement des col prévue pour faire moins compact et plus agréable à lire-->
+                <section class="col-md-offset-2 col-md-8">
+                    <h2>Les failles</h2>
+                    <article id="faille1">
+                        <h3>Les différentes méthodes pour les trouver</h3>
+                        <p>
+                            Pour corriger au mieux ces failles, il faut d’abord situer où se trouve la vulnérabilité du système. Suivant les intentions des hackers potentiels, elles ne se situeront pas au même endroit. Ceux qui ont des objectifs à courts termes seront plus préoccupés par toutes les transactions possibles (argent ou informations à valeur marchande), il faudra donc s’intéresser à cette partie-ci. Pour ceux qui ont de plus grandes ambitions, se situant sur le long terme, c’est aux informations confidentielles de l’entreprise qu’ils s’intéresseront sûrement. Là, ils vont rechercher la cible la plus vulnérable (le personnel de l’organisation elle-même, ses fournisseurs, ou encore son système informatique). Il faut donc aussi déterminer laquelle de ces cibles est la plus fragile pour mieux en assurer la protection.
+                        </p>
+                        <p>
+                            Les hackers utilisent de nombreux outils et méthodes pour trouver des failles dont on peut lister :
+                        </p>
+                        <ul>
+                            <li>Les scanneurs de vulnérabilités</li>
+                            <li>Le cassage de mots de passe</li>
+                            <li>Les analyseurs de paquets</li>
+                            <li>Les méthodes de phishing</li>
+                            <li>Les rootkits</li>
+                            <li>Le cheval de Troie</li>
+                            <li>Les virus</li>
+                            <li>Les mémorisateurs de frappes</li>
+                        </ul>
+                        <p>
+                            Parfois les hackers vont simplement chercher les failles manuellement, le plus simple pour ceux-ci est de se procurer le code du système et de voir comment il marche. Si le code n’est pas disponible, il faut voir comment le système fonctionne. Cette méthode est longue et compliquée et ne porte pas obligatoirement de fruits.
+                        </p>
+                        <p>
+                            La possibilité de se faire pirater réside en fait dans une erreur de codage et de l’algorithme dans un cas auquel personne n’a pensé lors de la conception. Il est donc important de faire attention au code source du système.
+                        </p>
+                        <p>
+                            Cependant certains logiciels de piratage ne sont pas issus de hackers qui agissent en individuel ou dans un groupe obscur : <br /> La NSA possède et développe de tels logiciels capables d’exploiter des failles, certaines tellement difficiles à trouver qu’elles existent depuis des années sans que personne d’autre ne les connaisse. Suite à un piratage sur l’agence elle-même, nombres de ces logiciels ont été révélés au grand public et mis à disposition des hackers. <br /> Les failles trouvées par la NSA permettaient donc aux hackers de créer leur propre arsenal inspiré de celui de la NSA, un exemple connu serait WannaCry qui s’est développé sur une faille de Windows que la NSA n’avait pas rapporté à Microsoft.
+                        </p>
+                    </article>
+                    <article id="faille2">
+                        <h3>Comment les corriger ?</h3>
+                        <p>
+                            Il est possible d’éviter la création de failles, de nombreux concepts et méthodes ont été mis en place afin de couper court au risque.
+                        </p>
+                        <p>
+                            Un système est sécurisé par conception quand, lors de sa conception, la sécurité a été considérée comme un aspect principal. Le système a donc prévu d’être attaqué, et des approches de créations permettent d’éviter des failles. Les principaux point de la sécurisation par conception sont les suivants :
+                        </p>
+                        <ul>
+                            <li>Le principe du minimum de privilège : les différentes parties du système ne peuvent faire que le minimum qui leur est demandé. Si un élément est compromis, il ne permet pas d’être utilisé pour avoir un accès au reste.</li>
+                            <li>Démonstration automatique de théorèmes : des fonctionnements de l’ordinateur sont vérifiés pour qu’ils marchent correctement.</li>
+                            <li>Revue du code et unité de tests : on va s’assurer que les parties sont à l’épreuve des entrées volontairement erronées.</li>
+                            <li>La défense en profondeur : il faut compromettre plus d’un élément du système pour le compromettre lui-même.</li>
+                            <li>L’utilisation d’audit log : le système va garder trace de toute activité suspecte.</li>
+                        </ul>
+                        <p>
+                            Il est possible d'architecturer le système de telle manière d’éviter de possibles failles, il faut réfléchir à toutes les relations entre les éléments du système et comment ils sont dépendants. Une réflexion sur quels sont les éléments à risque et la standardisation des contrôles est aussi nécessaire.
+                        </p>
+                        <p>
+                            Quand quelqu’un trouve une faille, elle peut être publiée intégralement par cette personne afin qu’elle soit corrigée rapidement et réduire la durée de vulnérabilité. La révélation d’une faille peut être publique ou discrète, dans le premier cas le risque que d’autres personnes l’exploite avant sa correction est grand, mais il motive généralement les développeurs à se dépêcher. Dans le second cas, les risques sont moins grands mais le temps que le fix de sécurité soit déployé, d’autres peuvent trouver la faille.
+                        </p>
+                        <p>
+                            Certains concepts de mesures de sécurité sont très simples et connus de tous, comme mettre en place un système de comptes avec mots de passe, la cryptographie des données, les pares-feux qui filtrent les transferts de données et les communications. Ces mesures sont simples et considérées comme acquises mais elles sont la base de la sécurité sur internet et n’importe quel autre système qui demande une intégrité.
+                        </p>
+                        <p>
+                            Bien sur il faut être réactif. Quand une intrusion a été détectée, il faut prendre une réponse adaptée comme une mise à niveau du système. Face à des failles de sécurité, des patchs de la part des développeurs des logiciels en question sont nécessaires pour arrêter les logiciels malveillants. C’est ce qu’a fait Microsoft en publiant un patch de sécurité qu’ils ont appliqué à des versions de Windows qui sont normalement abandonnées, afin de contrer les logiciels WannaCry.
+                        </p>
+                    </article>
+                </section>
+            </div>
+
+            <div id="page4" class="tab-pane fade">
+                <!--Section pour les hackers
+                    Changement des col prévue pour faire moins compact et plus agréable à lire-->
+                <section class="col-md-offset-2 col-md-8">
+                    <p>Test 4</p>
+                </section>
+            </div>
+
+            <div id="page5" class="tab-pane fade">
+                <section class="col-md-offset-2 col-md-8">
+                    <!--Section pour le Lexique
+                    Changement des col prévue pour faire moins compact et plus agréable à lire-->
+                </section>
+                <p>Test 5</p>
+            </div>
+
+
+        </div>
+    </main>
+</body>
+
+</html>
