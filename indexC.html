@@ -17,20 +17,39 @@
 </head>
 
 <body>
-    <div class="container-fluid"><!--MODIFICATION: ajout des colonnes-->
+    <div class="container-fluid">
+        <!--MODIFICATION: ajout des colonnes-->
         <header class="row">
-            <div class="col-md-1"></div>
-            <img src="Logo_cybersecurite.png" height="175" class="col-md-2"/> <!--MODIFICATION: ajout du logo-->
-            <div class="col-md-7">
+            <img src="Logo_cybersecurite.png" height="175" width="175" class="col-md-2" />
+            <!--MODIFICATION: ajout du logo-->
+            <div class="col-md-9">
                 <h1>LA CYBERSECURITE</h1>
                 <nav>
-                    <ul class="nav nav-tabs">
-                        <li class="active"><a data-toggle="tab" href="#1">Notre groupe</a></li>
-                        <li><a data-toggle="tab" href="#2">Cybersécurité</a></li>
-                        <li><a data-toggle="tab" href="#3">Les failles</a></li>
-                        <li><a data-toggle="tab" href="#4">Hackers</a></li>
-                        <li><a data-toggle="tab" href="#5">Lexique</a></li>
-                    </ul>
+                    <nav>
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#page1">Notre groupe</a></li>
+                            <li><a data-toggle="tab" href="#page2">Cybersécurité</a></li>
+                            <li><a data-toggle="tab" href="#page3">Les failles</a></li>
+                            <li><a data-toggle="tab" href="#page4">Hackers</a></li>
+                            <!--<li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Les failles </a>
+                                <ul class="dropdown-menu">
+                                    <li><a data-toggle="tab" href="#page3">Méthodes</a></li>
+                                    <li><a data-toggle="tab" href="#faille2">Correction</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hackers</a>
+                                <!--Sous-menu des hackers -- >
+                                    <li><a data-toggle="tab" href="#page4">White hats</a></li>
+                                    <li><a data-toggle="tab" href="#page4">Grey hats</a></li>
+                                    <li><a data-toggle="tab" href="#page4">Black hats</a></li>
+                                </ul>
+                            </li>-->
+                            <li><a data-toggle="tab" href="#page5">Lexique</a></li>
+                            <li><a data-toggle="tab" href="#page6">Contact</a></li>
+                        </ul>
+                    </nav>
                 </nav>
             </div>
         </header>
@@ -38,20 +57,22 @@
 
     <main>
         <div class="tab-content">
-            <div id="1" class="tab-pane fade in active">
+            <div id="page1" class="tab-pane fade in active">
                 <!-- Section pour l'article du groupe-->
                 <h2>Présentation du groupe</h2>
-                <section class="col-md-1"></section><!--supprimer ça quand on se souviendra comment faire un vide correctement-->
-                <section class="col-md-6">
+                <section class="col-md-offset-1 col-md-6">
                     <article>
                         <!-- Mettre cette partie sur 6 colonnes, avec une colonne vide à gauche -->
                         <h3>Bienvenue sur notre site !</h3>
                         <p>
-                            Tout d’abord, une petite présentation : <br /> Nous sommes trois étudiants en première année à l’IUT de Lannion, département Informatique. Notre équipe est composée de Hoël GOYAT, d’Enora MORVAN et de Clément QUÉRÉ. Ce site est le résultat de notre projet de premier semestre. Nous l’avons conçu de A à Z, en passant par le choix du thème, l’arborescence, le contenu, la charte graphique, mais également la conception de ce dernier. Nous sommes arrivé à ce résultat grâce à l’aide de nos encadrants ainsi que nos différentes aptitudes personnelles. <br /> Nous espérons que ce dernier vous plaira et saura répondre à vos questions. Nous vous souhaitons une bonne visite !
+                            Tout d’abord, une petite présentation : <br /> Nous sommes trois étudiants en première année à l’IUT de Lannion, département Informatique. Notre équipe est composée de Hoël GOYAT, d’Enora MORVAN et de Clément QUÉRÉ. Ce site est le résultat de notre projet de premier semestre. Nous l’avons conçu de A à Z, en passant par le choix du thème, l’arborescence, le contenu, la charte graphique, mais également la conception de ce dernier. Nous sommes arrivé à ce résultat grâce à l’aide de nos encadrants ainsi que nos différentes aptitudes personnelles.
+                        </p>
+                        <p>
+                            Nous espérons que ce dernier vous plaira et saura répondre à vos questions. Nous vous souhaitons une bonne visite !
                         </p>
                     </article>
-
-                    <figure class="col-md-5">
+                </section>
+                <figure class="col-md-5">
                         <!--Mettre cette partie sur les 5 colonnes restantes -->
                         <img src="Images/carre.png" alt="Photo de Clément" title="Clément" width="180" height="180" />
                         <figcaption>Clément</figcaption>
@@ -59,28 +80,156 @@
                         <figcaption>Clément</figcaption>
                         <img src="Images/carre.png" alt="Photo de Clément" title="Clément" width="180" height="180" />
                         <figcaption>Clément</figcaption>
-                    </figure>
+                </figure>
+            </div>
+
+            <div id="page2" class="tab-pane fade">
+                <!--Section pour la cybersécurité-->
+                <h2>Qu'est-ce que la cybersécurité ?</h2>
+                <p>
+                    Il s’agit de l’ensemble des sécurités qui permettent de protéger les éléments logiciels, matériels, les informations et les humains d’un système. La cyber-sécurité ce n’est donc pas seulement la protection des les partie logiciels d’un système mais aussi les systèmes opérateurs et les différentes machines sur lesquelles ils sont utilisés ainsi que les utilisateurs de ce système qui sont eux aussi sujets à des faiblesses.
+                </p>
+                <p>
+                    La cybersécurité repose sur trois principes que l’on peut résumer par l’acronyme DIC (Disponibilité - Intégralité - Confidentialité) : les organisations et autres clients pour qui la protection va s’effectuer travaillent en partant du principe que leur système est disponible à tout moment, il faut donc être capable de maintenir la disponibilité de ce système informatique. De plus, il faut vérifier que l’intégralité des données est bien protégée ainsi que vérifier qu’elles sont toutes complètes et exactes. Enfin, la confidentialité consiste à gérer les différentes permissions d’accès à certaines données pour tel ou tel utilisateur plutôt qu’un autre. Ces trois points sont essentiels pour le bon fonctionnement de l’organisation pour laquelle la sécurité doit être vérifiée.
+                </p>
+                <p>
+                    Sur ce site, nous allons essayer de nous restreindre à l’aspect de faille, en tentant de montrer quelles sont-elles et comment les corriger pour que les trois principes précédents soient toujours respectés.
+                </p>
+                <div align="center">
+                    <img src="Logo_cybersecurite%20-%20Couleurs%20Originales.png" height="500" width="500">
+                </div>
+            </div>
+
+
+            <div id="page3" class="tab-pane fade">
+                <!--Section pour les failles-->
+                <section>
+                    <h2>Les failles</h2>
+                    <div class="list-group col-md-3" id="ss-menu">
+                        <span class="list-group-item active">Les failles</span>
+                        <a href="#faille1" class="list-group-item">Méthodes</a>
+                        <a href="#faille2" class="list-group-item">Correction</a>
+                    </div>
+                    <article class="col-md-offset-4" id="faille1">
+                        <h3>Les différentes méthodes pour les trouver</h3>
+                        <p>
+                            Pour corriger au mieux ces failles, il faut d’abord situer où se trouve la vulnérabilité du système. Suivant les intentions des hackers potentiels, elles ne se situeront pas au même endroit. Ceux qui ont des objectifs à courts termes seront plus préoccupés par toutes les transactions possibles (argent ou informations à valeur marchande), il faudra donc s’intéresser à cette partie-ci. Pour ceux qui ont de plus grandes ambitions, se situant sur le long terme, c’est aux informations confidentielles de l’entreprise qu’ils s’intéresseront sûrement. Là, ils vont rechercher la cible la plus vulnérable (le personnel de l’organisation elle-même, ses fournisseurs, ou encore son système informatique). Il faut donc aussi déterminer laquelle de ces cibles est la plus fragile pour mieux en assurer la protection.
+                        </p>
+                        <p>
+                            Les hackers utilisent de nombreux outils et méthodes pour trouver des failles dont on peut lister :
+                        </p>
+                        <ul>
+                            <li>Les scanneurs de vulnérabilités</li>
+                            <li>Le cassage de mots de passe</li>
+                            <li>Les analyseurs de paquets</li>
+                            <li>Les méthodes de phishing</li>
+                            <li>Les rootkits</li>
+                            <li>Le cheval de Troie</li>
+                            <li>Les virus</li>
+                            <li>Les mémorisateurs de frappes</li>
+                        </ul>
+                        <p>
+                            Parfois les hackers vont simplement chercher les failles manuellement, le plus simple pour ceux-ci est de se procurer le code du système et de voir comment il marche. Si le code n’est pas disponible, il faut voir comment le système fonctionne. Cette méthode est longue et compliquée et ne porte pas obligatoirement de fruits.
+                        </p>
+                        <p>
+                            La possibilité de se faire pirater réside en fait dans une erreur de codage et de l’algorithme dans un cas auquel personne n’a pensé lors de la conception. Il est donc important de faire attention au code source du système.
+                        </p>
+                        <p>
+                            Cependant certains logiciels de piratage ne sont pas issus de hackers qui agissent en individuel ou dans un groupe obscur : <br /> La NSA possède et développe de tels logiciels capables d’exploiter des failles, certaines tellement difficiles à trouver qu’elles existent depuis des années sans que personne d’autre ne les connaisse. Suite à un piratage sur l’agence elle-même, nombres de ces logiciels ont été révélés au grand public et mis à disposition des hackers. <br /> Les failles trouvées par la NSA permettaient donc aux hackers de créer leur propre arsenal inspiré de celui de la NSA, un exemple connu serait WannaCry qui s’est développé sur une faille de Windows que la NSA n’avait pas rapporté à Microsoft.
+                        </p>
+                    </article>
+                    <article class="col-md-offset-4">
+                        <h3 id="faille2">Comment les corriger ?</h3>
+                        <p>
+                            Il est possible d’éviter la création de failles, de nombreux concepts et méthodes ont été mis en place afin de couper court au risque.
+                        </p>
+                        <p>
+                            Un système est sécurisé par conception quand, lors de sa conception, la sécurité a été considérée comme un aspect principal. Le système a donc prévu d’être attaqué, et des approches de créations permettent d’éviter des failles. Les principaux point de la sécurisation par conception sont les suivants :
+                        </p>
+                        <ul>
+                            <li>Le principe du minimum de privilège : les différentes parties du système ne peuvent faire que le minimum qui leur est demandé. Si un élément est compromis, il ne permet pas d’être utilisé pour avoir un accès au reste.</li>
+                            <li>Démonstration automatique de théorèmes : des fonctionnements de l’ordinateur sont vérifiés pour qu’ils marchent correctement.</li>
+                            <li>Revue du code et unité de tests : on va s’assurer que les parties sont à l’épreuve des entrées volontairement erronées.</li>
+                            <li>La défense en profondeur : il faut compromettre plus d’un élément du système pour le compromettre lui-même.</li>
+                            <li>L’utilisation d’audit log : le système va garder trace de toute activité suspecte.</li>
+                        </ul>
+                        <p>
+                            Il est possible d'architecturer le système de telle manière d’éviter de possibles failles, il faut réfléchir à toutes les relations entre les éléments du système et comment ils sont dépendants. Une réflexion sur quels sont les éléments à risque et la standardisation des contrôles est aussi nécessaire.
+                        </p>
+                        <p>
+                            Quand quelqu’un trouve une faille, elle peut être publiée intégralement par cette personne afin qu’elle soit corrigée rapidement et réduire la durée de vulnérabilité. La révélation d’une faille peut être publique ou discrète, dans le premier cas le risque que d’autres personnes l’exploite avant sa correction est grand, mais il motive généralement les développeurs à se dépêcher. Dans le second cas, les risques sont moins grands mais le temps que le fix de sécurité soit déployé, d’autres peuvent trouver la faille.
+                        </p>
+                        <p>
+                            Certains concepts de mesures de sécurité sont très simples et connus de tous, comme mettre en place un système de comptes avec mots de passe, la cryptographie des données, les pares-feux qui filtrent les transferts de données et les communications. Ces mesures sont simples et considérées comme acquises mais elles sont la base de la sécurité sur internet et n’importe quel autre système qui demande une intégrité.
+                        </p>
+                        <p>
+                            Bien sur il faut être réactif. Quand une intrusion a été détectée, il faut prendre une réponse adaptée comme une mise à niveau du système. Face à des failles de sécurité, des patchs de la part des développeurs des logiciels en question sont nécessaires pour arrêter les logiciels malveillants. C’est ce qu’a fait Microsoft en publiant un patch de sécurité qu’ils ont appliqué à des versions de Windows qui sont normalement abandonnées, afin de contrer les logiciels WannaCry.
+                        </p>
+                    </article>
                 </section>
             </div>
 
-            <div id="2" class="tab-pane fade">
-                <!--Section pour la cybersécurité-->
-                <p>Test 2</p>
-            </div>
-
-            <div id="3" class="tab-pane fade">
-                <!--Section pour les failles-->
-                <p>Test 3</p>
-            </div>
-
-            <div id="4" class="tab-pane fade">
+            <div id="page4" class="tab-pane fade">
                 <!--Section pour les hackers-->
-                <p>Test 4</p>
+                <section>
+                    <h2>Catégories de hackers</h2>
+                    <p>De nombreux termes sont utilisés pour définir les hackers, parmi ceux-ci, il y a trois principaux types :</p>
+                    <article>
+                        <h3>White hats</h3>
+                        <p>
+                            Les white hats sont des hackers qui ont reçu des qualifications suffisantes et approuvées par les autres. Ils aident les victimes à sécuriser les systèmes et ils se battent contre la cybercriminalité.
+                        </p>
+                        <p>
+                            Ils travaillent généralement dans les grandes entreprises pour sécuriser les systèmes et réseaux. Pour cela, ils s’introduisent dans les systèmes et les réseaux pour trouver les différentes failles, pour ensuite trouver un moyen de les corriger.
+                        </p>
+                    </article>
+                    <article>
+                        <h3>Grey hats</h3>
+                        <p>
+                            Les grey hats sont des hackers provenant du mélange entre les white hats et les black hats. C’est-à-dire qu’ils vont s’introduire dans des réseaux ou des systèmes illégalement pour rechercher leurs failles. Mais, au contraire des black hats, ils vont prévenir les usagers de leur intrusion pour qu’ils sécurisent leurs systèmes. Souvent, ils le font pour améliorer leur performance dans la programmation. Plus tard, certains deviennent des white hats lorsqu’ils sont acceptés pour travailler pour certaines entreprises.
+                        </p>
+                    </article>
+                    <article>
+                        <h3>Black hats</h3>
+                        <p>
+                            Les black hats sont des hackers aussi expérimentés que les autres, mais ils n’agissent pas comme eux. Ils s'introduisent dans les systèmes ou piratent des comptes pour des fins personnelles. Ils créent aussi des virus pour, par exemple, bloquer les données afin de demander une rançon pour récupérer celles-ci. C’est souvent pour eux que le terme “hackers” est utilisé dans les médias.
+                        </p>
+                    </article>
+                </section>
             </div>
 
-            <div id="5" class="tab-pane fade">
+            <div id="page5" class="tab-pane fade">
                 <!--Section pour le Lexique-->
-                <p>Test 5</p>
+                <dl>
+                    <dt>Analyseurs de paquets</dt>
+                    <dd>Sur un réseau, les informations se déplacent d’ordinateur en ordinateur par paquets, en réussissant à se mettre sur le canal de transfert de ces informations, il est possible de les récupérer.</dd> <br />
+                    <dt>Cassage de mot de passe</dt>
+                    <dd>Avec de la puissance de calcul, un ordinateur peut calculer rapidement des milliers de mots de passe relativement courts. Les algorithmes faisant ça s’améliorent avec le temps en ajoutant des recherches via des dictionnaires.</dd> <br />
+                    <dt>Cheval de Troie</dt>
+                    <dd>Il s’agit d’un programme qui s’infiltre dans un système en se faisant passer pour autre chose pour l’espionner ou le modifier à l’insu de tous, en laissant un accès secret qui permettra des attaques par la suite.</dd> <br />
+                    <dt>Ingénierie sociale</dt>
+                    <dd>Dans le domaine de la cybersécurité, l’ingénierie sociale est l’ensemble des méthodes utilisées pour tromper les éléments humains du système. Par exemple : le hacker fait croire qu’il est un administrateur à un employé et lui demande des informations sur le système. Il s’agit de méthodes où du charisme et du culot sont nécessaires pour être employée.</dd> <br />
+                    <dt>Mémorisateurs de frappes</dt>
+                    <dd>Les mémorisateurs de frappes sont des logiciels qui vont retenir les frappes de touches de clavier afin de se souvenir de tout ce que les utilisateurs vont taper sur leur clavier, y compris des mots de passe.</dd><br />
+                    <dt>Phishing</dt>
+                    <dd>Il s’agit de se faire passer pour un élément fiable et convaincre un utilisateur du système de donner des informations qui permettraient de rentrer dans le système. Par exemple, les spam dans les boites mails qui demandent les codes de cartes de crédit en se faisant passer pour les impôts.</dd><br />
+                    <dt>Rootkits</dt>
+                    <dd>Les rootkits (trousse administrateur pirate) sont des logiciels qui permettent de dépasser les sécurités basiques d’un ordinateur pour accéder à un niveau de sécurité plus élevé qui ne devrait pas être attribué.</dd> <br />
+                    <dt>Scanneur de vulnérabilité</dt>
+                    <dd>Les rootkits (trousse administrateur pirate) sont des logiciels qui permettent de dépasser les sécurités basiques d’un ordinateur pour accéder à un niveau de sécurité plus élevé qui ne devrait pas être attribué.</dd> <br />
+                    <dt>Virus</dt>
+                    <dd>Il s’agit des programmes qui une fois dans le système vont réinjecter certaines parties de leur code pour agir plus tard.</dd>
+                </dl>
+            </div>
+            <div id="page6" class="tab-pane fade">
+                <p>
+                    Ce site a été réalisé par 3 étudiants du département informatique de l'IUT de Lannion :
+                </p>
+                <ul>
+                    <li>Clément QUERE - <a href="mailto:clement.quere@etudiant.univ-rennes1.fr">clement.quere@etudiant.univ-rennes1.fr</a></li>
+                    <li>Enora MORVAN - <a href="mailto:enora.morvan.1@etudiant.univ-rennes1.fr">enora.morvan.1@etudiant.univ-rennes1.fr</a></li>
+                    <li>Hoël GOYAT - <a href="mailto:hoel.goyat@etudiant.univ-rennes1.fr">hoel.goyat@etudiant.univ-rennes1.fr</a></li>
+                </ul>
             </div>
 
 
