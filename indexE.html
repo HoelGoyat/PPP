@@ -27,12 +27,21 @@
                     <a data-toggle="tab" href="#page3">Les failles</a>
                     <!--Sous-menu des failles-->
                     <ul>
-                        <li>Méthodes</li>
-                        <li>Correction</li>
+                        <li><a href="#faille1">Méthodes</a></li>
+                        <li><a href="#faille2">Correction</a></li>
                     </ul>
                     <!--#####################-->
                 </li>
-                <li><a data-toggle="tab" href="#page4">Hackers</a></li>
+                <li>
+                    <a data-toggle="tab" href="#page4">Hackers</a>
+                    <!--Sous-menu des hackers-->
+                    <ul>
+                        <li>White hats</li>
+                        <li>Grey hats</li>
+                        <li>Black hats</li>
+                    </ul>
+                </li>
+                <!--########################-->
                 <li><a data-toggle="tab" href="#page5">Lexique</a></li>
             </ul>
         </nav>
@@ -85,7 +94,12 @@
                 <!--Section pour les failles-->
                 <section>
                     <h2>Les failles</h2>
-                    <article id="faille1">
+                    <div class="list-group col-md-3" id="ss-menu">
+                        <span class="list-group-item active">Les failles</span>
+                        <a href="#faille1" class="list-group-item">Méthodes</a>
+                        <a href="#faille2" class="list-group-item">Correction</a>
+                    </div>
+                    <article class="col-md-offset-4" id="faille1">
                         <h3>Les différentes méthodes pour les trouver</h3>
                         <p>
                             Pour corriger au mieux ces failles, il faut d’abord situer où se trouve la vulnérabilité du système. Suivant les intentions des hackers potentiels, elles ne se situeront pas au même endroit. Ceux qui ont des objectifs à courts termes seront plus préoccupés par toutes les transactions possibles (argent ou informations à valeur marchande), il faudra donc s’intéresser à cette partie-ci. Pour ceux qui ont de plus grandes ambitions, se situant sur le long terme, c’est aux informations confidentielles de l’entreprise qu’ils s’intéresseront sûrement. Là, ils vont rechercher la cible la plus vulnérable (le personnel de l’organisation elle-même, ses fournisseurs, ou encore son système informatique). Il faut donc aussi déterminer laquelle de ces cibles est la plus fragile pour mieux en assurer la protection.
@@ -114,8 +128,8 @@
                             La NSA possède et développe de tels logiciels capables d’exploiter des failles, certaines tellement difficiles à trouver qu’elles existent depuis des années sans que personne d’autre ne les connaisse. Suite à un piratage sur l’agence elle-même, nombres de ces logiciels ont été révélés au grand public et mis à disposition des hackers. <br /> Les failles trouvées par la NSA permettaient donc aux hackers de créer leur propre arsenal inspiré de celui de la NSA, un exemple connu serait WannaCry qui s’est développé sur une faille de Windows que la NSA n’avait pas rapporté à Microsoft.
                         </p>
                     </article>
-                    <article id="faille2">
-                        <h3>Comment les corriger ?</h3>
+                    <article class="col-md-offset-4">
+                        <h3 id="faille2">Comment les corriger ?</h3>
                         <p>
                             Il est possible d’éviter la création de failles, de nombreux concepts et méthodes ont été mis en place afin de couper court au risque.
                         </p>
@@ -147,12 +161,56 @@
 
             <div id="page4" class="tab-pane fade">
                 <!--Section pour les hackers-->
-                <p>Test 4</p>
+                <section>
+                    <h2>Catégories de hackers</h2>
+                    <p>De nombreux termes sont utilisés pour définir les hackers, parmi ceux-ci, il y a trois principaux types :</p>
+                    <article>
+                        <h3>White hats</h3>
+                        <p>
+                            Les white hats sont des hackers qui ont reçu des qualifications suffisantes et approuvées par les autres. Ils aident les victimes à sécuriser les systèmes et ils se battent contre la cybercriminalité. 
+                        </p>
+                        <p>
+                            Ils travaillent généralement dans les grandes entreprises pour sécuriser les systèmes et réseaux. Pour cela, ils s’introduisent dans les systèmes et les réseaux pour trouver les différentes failles, pour ensuite trouver un moyen de les corriger.
+                        </p>
+                    </article>
+                    <article>
+                        <h3>Grey hats</h3>
+                        <p>
+                            Les grey hats sont des hackers provenant du mélange entre les white hats et les black hats. C’est-à-dire qu’ils vont s’introduire dans des réseaux ou des systèmes illégalement pour rechercher leurs failles. Mais, au contraire des black hats, ils vont prévenir les usagers de leur intrusion pour qu’ils sécurisent leurs systèmes. Souvent, ils le font pour améliorer leur performance dans la programmation. Plus tard, certains deviennent des white hats lorsqu’ils sont acceptés pour travailler pour certaines entreprises.
+                        </p>
+                    </article>
+                    <article>
+                        <h3>Black hats</h3>
+                        <p>
+                            Les black hats sont des hackers aussi expérimentés que les autres, mais ils n’agissent pas comme eux. Ils s'introduisent dans les systèmes ou piratent des comptes pour des fins personnelles. Ils créent aussi des virus pour, par exemple, bloquer les données afin de demander une rançon pour récupérer celles-ci. C’est souvent pour eux que le terme “hackers” est utilisé dans les médias.
+                        </p>
+                    </article>
+                </section>
             </div>
 
             <div id="page5" class="tab-pane fade">
                 <!--Section pour le Lexique-->
-                <p>Test 5</p>
+                <dl>
+                    <dt>Analyseurs de paquets</dt>
+                    <dd>Sur un réseau, les informations se déplacent d’ordinateur en ordinateur par paquets, en réussissant à se mettre sur le canal de transfert de ces informations, il est possible de les récupérer.</dd> <br />
+                    <dt>Cassage de mot de passe</dt>
+                    <dd>Avec de la puissance de calcul, un ordinateur peut calculer rapidement des milliers de mots de passe relativement courts. Les algorithmes faisant ça s’améliorent avec le temps en ajoutant des recherches via des dictionnaires.</dd> <br />
+                    <dt>Cheval de Troie</dt>
+                    <dd>Il s’agit d’un programme qui s’infiltre dans un système en se faisant passer pour autre chose pour l’espionner ou le modifier à l’insu de tous, en laissant un accès secret qui permettra des attaques par la suite.</dd> <br />
+                    <dt>Ingénierie sociale</dt>
+                    <dd>Dans le domaine de la cybersécurité, l’ingénierie sociale est l’ensemble des méthodes utilisées pour tromper les éléments humains du système. Par exemple : le hacker fait croire qu’il est un administrateur à un employé et lui demande des informations sur le système.
+                    Il s’agit de méthodes où du charisme et du culot sont nécessaires pour être employée.</dd> <br />
+                    <dt>Mémorisateurs de frappes</dt>
+                    <dd>Les mémorisateurs de frappes sont des logiciels qui vont retenir les frappes de touches de clavier afin de se souvenir de tout ce que les utilisateurs vont taper sur leur clavier, y compris des mots de passe.</dd> <br />
+                    <dt>Phishing</dt>
+                    <dd>Il s’agit de se faire passer pour un élément fiable et convaincre un utilisateur du système de donner des informations qui permettraient de rentrer dans le système. Par exemple, les spam dans les boites mails qui demandent les codes de cartes de crédit en se faisant passer pour les impôts.</dd> <br />
+                    <dt>Rootkits</dt>
+                    <dd>Les rootkits (trousse administrateur pirate) sont des logiciels qui permettent de dépasser les sécurités basiques d’un ordinateur pour accéder à un niveau de sécurité plus élevé qui ne devrait pas être attribué.</dd> <br />
+                    <dt>Scanneur de vulnérabilité</dt>
+                    <dd>Les rootkits (trousse administrateur pirate) sont des logiciels qui permettent de dépasser les sécurités basiques d’un ordinateur pour accéder à un niveau de sécurité plus élevé qui ne devrait pas être attribué.</dd> <br />
+                    <dt>Virus</dt>
+                    <dd>Il s’agit des programmes qui une fois dans le système vont réinjecter certaines parties de leur code pour agir plus tard.</dd>
+                </dl>
             </div>
 
 

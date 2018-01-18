@@ -2,6 +2,7 @@ nav li {
     display: inline-block;
     margin: 0.2em;
     padding: 0.2em;
+    color: #F2F2F2;
 }
 
 header {
@@ -32,4 +33,25 @@ h2 {
 
 figure img {
     float: right;
+}
+
+p {
+    color : #000;
+}
+
+/*----------MODIFICATIONS ENORA---------------*/
+p {
+    text-align: justify;
+}
+
+main {
+    padding: 2em;
+}
+
+#ss-menu {
+    position: fixed;
+}
+
+dl {
+    text-align: justify;
 }
