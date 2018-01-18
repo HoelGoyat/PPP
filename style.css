@@ -1,14 +1,15 @@
 nav li {
     display: inline-block;
-    margin: 0em;
-    padding: 0em;
+    margin: 0.2em;
+    padding: 0.2em;
+    color: #F2F2F2;
 }
 
 header {
     background-color: #1875c7;
     text-align: center;
     color: #F2F2F2;
-    height: 12em;
+    height: 151px;
 }
 
 body {
@@ -25,10 +26,20 @@ h2 {
     text-align: center;
 }
 
-/*.select {
+.select {
     background-color: #f2f2f2;
     color: #1875c7;
-}*/
+}
+
+figure img {
+    float: right;
+}
+
+p {
+    color : #000;
+}
+
+/*MODIFICATION: suppression*/
 
 figure img {
     float: right;
@@ -69,4 +80,22 @@ para {
   background-color: #f2f2f2;
   border: 0 solid #ddd;
   border-bottom-color: transparent;
+}
+
+
+/*----------MODIFICATIONS ENORA---------------*/
+p {
+    text-align: justify;
+}
+
+main {
+    padding: 2em;
+}
+
+#ss-menu {
+    position: fixed;
+}
+
+dl {
+    text-align: justify;
 }
