@@ -1,7 +1,7 @@
-nav li {
+/*nav li {
     display: inline-block;
-    margin: 0;      /*MODIFICATION: mise à 0*/
-    padding: 0;     /*MODIFICATION: mise à 0*/
+    margin: 0;      / *MODIFICATION: mise à 0* /
+    padding: 0;     / *MODIFICATION: mise à 0* /
 }
 
 header {
@@ -26,6 +26,159 @@ h2 {
     text-align: center;
 }
 
+/ *MODIFICATION: suppression * /
+
+figure img {
+    float: right;
+}
+
+para {
+    color : #000;
+}
+
+/ *MODIFICATION: navigation* /
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #1875c7;
+  cursor: default;
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+}
+
+.nav-tabs > li > a{
+  color: #f2f2f2;
+  cursor: default;
+  background-color: #1875C7;
+  border: 0 solid #fff;
+  border-bottom-color: transparent;
+}
+
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus {
+  color: #1875c7;
+  cursor: default;
+  background-color: #f2f2f2;
+  border: 0 solid #ddd;
+  border-bottom-color: transparent;
+}
+
+--------------------------------------------------------------
+nav li {
+    display: inline-block;
+    margin: 0em;
+    padding: 0em;
+}
+
+header {
+    background-color: #1875c7;
+    text-align: center;
+    color: #F2F2F2;
+    height: 12em;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2
+}
+
+nav {
+    display: inline-flex;    
+}
+
+h2 {
+    text-align: center;
+}
+
+/*.select {
+    background-color: #f2f2f2;
+    color: #1875c7;
+}* /
+
+figure img {
+    float: right;
+}
+
+para {
+    color : #000;
+}
+
+/ *Modifications Hoel* /
+
+
+
+
+/ *MODIFICATION: navigation* /
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #1875c7;
+  cursor: default;
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+}
+
+.nav-tabs > li > a{
+  color: #f2f2f2;
+  cursor: default;
+  background-color: #1875C7;
+  border: 0 solid #fff;
+  border-bottom-color: transparent;
+}
+
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus {
+  color: #1875c7;
+  cursor: default;
+  background-color: #f2f2f2;
+  border: 0 solid #ddd;
+  border-bottom-color: transparent;
+}                                                          */
+
+nav li {
+    display: inline-block;
+    margin: 0.2em;
+    padding: 0.2em;
+    color: #F2F2F2;
+}
+
+header {
+    background-color: #1875c7;
+    text-align: center;
+    color: #F2F2F2;
+    height: 151px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2
+}
+
+nav {
+    display: inline-flex;    
+}
+
+h2 {
+    text-align: center;
+}
+
+.select {
+    background-color: #f2f2f2;
+    color: #1875c7;
+}
+
+figure img {
+    float: right;
+}
+
+p {
+    color : #000;
+}
+
 /*MODIFICATION: suppression*/
 
 figure img {
@@ -34,6 +187,24 @@ figure img {
 
 para {
     color : #000;
+}
+
+
+/*----------MODIFICATIONS ENORA---------------*/
+p {
+    text-align: justify;
+}
+
+main {
+    padding: 2em;
+}
+
+#ss-menu {
+    position: fixed;
+}
+
+dl {
+    text-align: justify;
 }
 
 /*MODIFICATION: navigation*/
