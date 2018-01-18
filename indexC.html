@@ -17,33 +17,43 @@
 </head>
 
 <body>
-    <header>
-        <h1>LA CYBERSECURITE</h1>
-        <nav>
-            <ul class="nav nav-tabs">
-                <li class="active"><a data-toggle="tab" href="#page1">Notre groupe</a></li>
-                <li><a data-toggle="tab" href="#page2">Cybersécurité</a></li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown">Les failles </a>
-                    <ul class="dropdown-menu">
-                        <li><a data-toggle="tab" href="#page3">Méthodes</a></li>
-                        <li><a data-toggle="tab" href="#page3">Correction</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hackers</a>
-                    <!--Sous-menu des hackers-->
-                    <ul class="dropdown-menu">
-                        <li><a data-toggle="tab" href="#page4">White hats</a></li>
-                        <li><a data-toggle="tab" href="#page4">Grey hats</a></li>
-                        <li><a data-toggle="tab" href="#page4">Black hats</a></li>
-                    </ul>
-                </li>
-
-                <li><a data-toggle="tab" href="#page5">Lexique</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container-fluid">
+        <!--MODIFICATION: ajout des colonnes-->
+        <header class="row">
+            <img src="Logo_cybersecurite.png" height="175" width="175" class="col-md-2" />
+            <!--MODIFICATION: ajout du logo-->
+            <div class="col-md-9">
+                <h1>LA CYBERSECURITE</h1>
+                <nav>
+                    <nav>
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#page1">Notre groupe</a></li>
+                            <li><a data-toggle="tab" href="#page2">Cybersécurité</a></li>
+                            <li><a data-toggle="tab" href="#page3">Les failles</a></li>
+                            <li><a data-toggle="tab" href="#page4">Hackers</a></li>
+                            <!--<li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Les failles </a>
+                                <ul class="dropdown-menu">
+                                    <li><a data-toggle="tab" href="#page3">Méthodes</a></li>
+                                    <li><a data-toggle="tab" href="#faille2">Correction</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hackers</a>
+                                <!--Sous-menu des hackers -- >
+                                    <li><a data-toggle="tab" href="#page4">White hats</a></li>
+                                    <li><a data-toggle="tab" href="#page4">Grey hats</a></li>
+                                    <li><a data-toggle="tab" href="#page4">Black hats</a></li>
+                                </ul>
+                            </li>-->
+                            <li><a data-toggle="tab" href="#page5">Lexique</a></li>
+                            <li><a data-toggle="tab" href="#page6">Contact</a></li>
+                        </ul>
+                    </nav>
+                </nav>
+            </div>
+        </header>
+    </div>
 
     <main>
         <div class="tab-content">
@@ -61,8 +71,8 @@
                             Nous espérons que ce dernier vous plaira et saura répondre à vos questions. Nous vous souhaitons une bonne visite !
                         </p>
                     </article>
-
-                    <figure class="col-md-5">
+                </section>
+                <figure class="col-md-5">
                         <!--Mettre cette partie sur les 5 colonnes restantes -->
                         <img src="Images/carre.png" alt="Photo de Clément" title="Clément" width="180" height="180" />
                         <figcaption>Clément</figcaption>
@@ -70,8 +80,7 @@
                         <figcaption>Clément</figcaption>
                         <img src="Images/carre.png" alt="Photo de Clément" title="Clément" width="180" height="180" />
                         <figcaption>Clément</figcaption>
-                    </figure>
-                </section>
+                </figure>
             </div>
 
             <div id="page2" class="tab-pane fade">
@@ -86,7 +95,11 @@
                 <p>
                     Sur ce site, nous allons essayer de nous restreindre à l’aspect de faille, en tentant de montrer quelles sont-elles et comment les corriger pour que les trois principes précédents soient toujours respectés.
                 </p>
+                <div align="center">
+                    <img src="Logo_cybersecurite%20-%20Couleurs%20Originales.png" height="500" width="500">
+                </div>
             </div>
+
 
             <div id="page3" class="tab-pane fade">
                 <!--Section pour les failles-->
@@ -197,9 +210,9 @@
                     <dt>Ingénierie sociale</dt>
                     <dd>Dans le domaine de la cybersécurité, l’ingénierie sociale est l’ensemble des méthodes utilisées pour tromper les éléments humains du système. Par exemple : le hacker fait croire qu’il est un administrateur à un employé et lui demande des informations sur le système. Il s’agit de méthodes où du charisme et du culot sont nécessaires pour être employée.</dd> <br />
                     <dt>Mémorisateurs de frappes</dt>
-                    <dd>Les mémorisateurs de frappes sont des logiciels qui vont retenir les frappes de touches de clavier afin de se souvenir de tout ce que les utilisateurs vont taper sur leur clavier, y compris des mots de passe.</dd> <br />
+                    <dd>Les mémorisateurs de frappes sont des logiciels qui vont retenir les frappes de touches de clavier afin de se souvenir de tout ce que les utilisateurs vont taper sur leur clavier, y compris des mots de passe.</dd><br />
                     <dt>Phishing</dt>
-                    <dd>Il s’agit de se faire passer pour un élément fiable et convaincre un utilisateur du système de donner des informations qui permettraient de rentrer dans le système. Par exemple, les spam dans les boites mails qui demandent les codes de cartes de crédit en se faisant passer pour les impôts.</dd> <br />
+                    <dd>Il s’agit de se faire passer pour un élément fiable et convaincre un utilisateur du système de donner des informations qui permettraient de rentrer dans le système. Par exemple, les spam dans les boites mails qui demandent les codes de cartes de crédit en se faisant passer pour les impôts.</dd><br />
                     <dt>Rootkits</dt>
                     <dd>Les rootkits (trousse administrateur pirate) sont des logiciels qui permettent de dépasser les sécurités basiques d’un ordinateur pour accéder à un niveau de sécurité plus élevé qui ne devrait pas être attribué.</dd> <br />
                     <dt>Scanneur de vulnérabilité</dt>
@@ -207,6 +220,16 @@
                     <dt>Virus</dt>
                     <dd>Il s’agit des programmes qui une fois dans le système vont réinjecter certaines parties de leur code pour agir plus tard.</dd>
                 </dl>
+            </div>
+            <div id="page6" class="tab-pane fade">
+                <p>
+                    Ce site a été réalisé par 3 étudiants du département informatique de l'IUT de Lannion :
+                </p>
+                <ul>
+                    <li>Clément QUERE - <a href="mailto:clement.quere@etudiant.univ-rennes1.fr">clement.quere@etudiant.univ-rennes1.fr</a></li>
+                    <li>Enora MORVAN - <a href="mailto:enora.morvan.1@etudiant.univ-rennes1.fr">enora.morvan.1@etudiant.univ-rennes1.fr</a></li>
+                    <li>Hoël GOYAT - <a href="mailto:hoel.goyat@etudiant.univ-rennes1.fr">hoel.goyat@etudiant.univ-rennes1.fr</a></li>
+                </ul>
             </div>
 
 
