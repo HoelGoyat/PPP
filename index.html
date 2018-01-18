@@ -9,24 +9,29 @@
     <!--Pas sûr que ceci soit utile ou inutile-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Déclaration bootstrap-->
-    <link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap.css" />
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap.css" />-->
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css" />
+    
+    <!--<script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>-->
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--<link rel="stylesheet" href="style.css" />
+    
+    <!--<script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>-->
 </head>
 
 <body>
     <div class="container-fluid">
         <!--MODIFICATION: ajout des colonnes-->
         <header class="row">
-            <div class="col-md-1 col-sm-offset"></div>
-            <img src="Logo_cybersecurite.png" height="175" width="175" class="col-md-2 hidden-xs" />
+            <img src="Logo_cybersecurite.png" class="col-md-2 col-md-offset-1 hidden-sm hidden-xs" />
             <!--MODIFICATION: ajout du logo-->
-            <div class="col-md-7 col-xs-6">
+            <div class="col-md-7 hidden-sm hidden-xs">
                 <h1>LA CYBERSECURITE</h1>
                 <nav>
-                    
+
                     <ul class="nav nav-tabs">
                         <li class="active"><a data-toggle="tab" href="#page1">Notre groupe</a></li>
                         <li><a data-toggle="tab" href="#page2">Cybersécurité</a></li>
@@ -42,6 +47,7 @@
                             -->
                         <li><a data-toggle="tab" href="#page4">Hackers</a></li>
                         <li><a data-toggle="tab" href="#page5">Lexique</a></li>
+                        <li><a data-toggle="tab" href="#page6">Contacts</a></li>
                     </ul>
                     <!--
                     <nav>
@@ -71,6 +77,18 @@
                     -->
                 </nav>
             </div>
+            <div class="hidden-md hidden-lg hidden-xl">
+                <nav>
+                    <ul class="nav nav-tabs nav-stacked test">
+                        <li class="active"><a data-toggle="tab" href="#page1">Notre groupe</a></li>
+                        <li><a data-toggle="tab" href="#page2">Cybersécurité</a></li>
+                        <li><a data-toggle="tab" href="#page3">Les failles</a></li>
+                        <li><a data-toggle="tab" href="#page4">Hackers</a></li>
+                        <li><a data-toggle="tab" href="#page5">Lexique</a></li>
+                        <li><a data-toggle="tab" href="#page6">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
     </div>
 
@@ -80,7 +98,7 @@
                 <!-- Section pour l'article du groupe
                     Changement des col prévue pour faire moins compact et plus agréable à lire-->
                 <h2>Présentation du groupe</h2>
-                <section class="col-md-offset-2 col-md-8">
+                <section class="col-md-offset-2 col-md-5">
                     <article>
                         <!-- Mettre cette partie sur 6 colonnes, avec une colonne vide à gauche -->
                         <h3>Bienvenue sur notre site !</h3>
@@ -92,16 +110,25 @@
                         </p>
                     </article>
 
-                    <figure class="col-md-5">
-                        <!--Mettre cette partie sur les 5 colonnes restantes -->
-                        <img src="Images/carre.png" alt="Photo de Clément" title="Clément" width="180" height="180" />
-                        <figcaption>Clément</figcaption>
-                        <img src="Images/carre.png" alt="Photo de Clément" title="Clément" width="180" height="180" />
-                        <figcaption>Clément</figcaption>
-                        <img src="Images/carre.png" alt="Photo de Clément" title="Clément" width="180" height="180" />
-                        <figcaption>Clément</figcaption>
-                    </figure>
+
                 </section>
+                <section class="col-md-3 container-fluid ">
+                    <figure class="col-md-12">
+                        <!--Mettre cette partie sur les 5 colonnes restantes -->
+                        <img src="IMG_20180118_153548.jpg" alt="Photo de Clément" title="Clément" width="180" height="180" />
+                        <figcaption class="col-md-offset-2">Clément</figcaption>
+                    </figure>
+                    <figure class="col-md-12">
+                        <img src="IMG_20180118_153604.jpg" alt="Photo de Clément" title="Clément" width="180" height="180" />
+                        <figcaption class="col-md-offset-2">Clément</figcaption>
+                    </figure>
+                    <figure class="col-md-12">
+                        <img src="IMG_20180118_153654.jpg" alt="Photo de Clément" title="Clément" width="180" height="180" />
+                        <figcaption class="col-md-offset-2">Clément</figcaption>
+                    </figure>
+
+                </section>
+
             </div>
 
             <div id="page2" class="tab-pane fade">
@@ -131,12 +158,12 @@
                     Changement des col prévue pour faire moins compact et plus agréable à lire-->
                 <section>
                     <h2>Les failles</h2>
-                    <div class="list-group col-md-3" id="ss-menu">
+                    <div class="list-group col-md-1" id="ss-menu">
                         <span class="list-group-item active">Les failles</span>
                         <a href="#faille1" class="list-group-item">Méthodes</a>
                         <a href="#faille2" class="list-group-item">Correction</a>
                     </div>
-                    <article class="col-md-offset-4" id="faille1">
+                    <article class="col-md-offset-2 col-md-8" id="faille1">
                         <h3>Les différentes méthodes pour les trouver</h3>
                         <p>
                             Pour corriger au mieux ces failles, il faut d’abord situer où se trouve la vulnérabilité du système. Suivant les intentions des hackers potentiels, elles ne se situeront pas au même endroit. Ceux qui ont des objectifs à courts termes seront plus préoccupés par toutes les transactions possibles (argent ou informations à valeur marchande), il faudra donc s’intéresser à cette partie-ci. Pour ceux qui ont de plus grandes ambitions, se situant sur le long terme, c’est aux informations confidentielles de l’entreprise qu’ils s’intéresseront sûrement. Là, ils vont rechercher la cible la plus vulnérable (le personnel de l’organisation elle-même, ses fournisseurs, ou encore son système informatique). Il faut donc aussi déterminer laquelle de ces cibles est la plus fragile pour mieux en assurer la protection.
@@ -164,7 +191,7 @@
                             Cependant certains logiciels de piratage ne sont pas issus de hackers qui agissent en individuel ou dans un groupe obscur : <br /> La NSA possède et développe de tels logiciels capables d’exploiter des failles, certaines tellement difficiles à trouver qu’elles existent depuis des années sans que personne d’autre ne les connaisse. Suite à un piratage sur l’agence elle-même, nombres de ces logiciels ont été révélés au grand public et mis à disposition des hackers. <br /> Les failles trouvées par la NSA permettaient donc aux hackers de créer leur propre arsenal inspiré de celui de la NSA, un exemple connu serait WannaCry qui s’est développé sur une faille de Windows que la NSA n’avait pas rapporté à Microsoft.
                         </p>
                     </article>
-                    <article class="col-md-offset-4">
+                    <article class="col-md-offset-2 col-md-8">
                         <h3 id="faille2">Comment les corriger ?</h3>
                         <p>
                             Il est possible d’éviter la création de failles, de nombreux concepts et méthodes ont été mis en place afin de couper court au risque.
@@ -195,7 +222,7 @@
                 </section>
             </div>
 
-            <div id="page4" class="tab-pane fade">
+            <div id="page4" class="tab-pane fade col-md-8 col-md-offset-2">
                 <!--Section pour les hackers-->
                 <section>
                     <h2>Catégories de hackers</h2>
@@ -224,7 +251,7 @@
                 </section>
             </div>
 
-            <div id="page5" class="tab-pane fade">
+            <div id="page5" class="tab-pane fade col-md-offset-2 col-md-8">
                 <!--Section pour le Lexique-->
                 <dl>
                     <dt>Analyseurs de paquets</dt>
@@ -246,6 +273,24 @@
                     <dt>Virus</dt>
                     <dd>Il s’agit des programmes qui une fois dans le système vont réinjecter certaines parties de leur code pour agir plus tard.</dd>
                 </dl>
+            </div>
+
+            <div id="page6" class="tab-pane fade">
+                <section class="col-md-8 col-md-offset-2">
+                    <p>
+                        Ce site a été réalisé par 3 étudiants du département informatique de l'IUT de Lannion dans le cadre d'un projet de l'enseignement de Projet Personnel et Professionnel :
+                    </p>
+                    <ul>
+                        <li>Clément QUERE - <a href="mailto:clement.quere@etudiant.univ-rennes1.fr">clement.quere@etudiant.univ-rennes1.fr</a></li>
+                        <li>Enora MORVAN - <a href="mailto:enora.morvan.1@etudiant.univ-rennes1.fr">enora.morvan.1@etudiant.univ-rennes1.fr</a></li>
+                        <li>Hoël GOYAT - <a href="mailto:hoel.goyat@etudiant.univ-rennes1.fr">hoel.goyat@etudiant.univ-rennes1.fr</a></li>
+                    </ul>
+                    <a href="http://www.iut-lannion.fr/">Site de l'IUT</a>
+                    <p>
+                        IUT de Lannion :
+                    </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2630.2854983865705!2d-3.4528634277068533!3d48.757343990476556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48122c034b5275af%3A0x355e62516b08c22f!2sIUT+Lannion!5e0!3m2!1sfr!2sfr!4v1516282659108" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </section>
             </div>
         </div>
     </main>

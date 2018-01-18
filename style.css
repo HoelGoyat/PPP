@@ -9,18 +9,21 @@ header {
     background-color: #1875c7;
     text-align: center;
     color: #F2F2F2;
-    height: 151px;
-    
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2
+    background-color: #f2f2f2;
+    font-size: 1.75em;
 }
 
 nav {
-    display: inline-flex;    
+    display: inline-flex;
+}
+
+h1 {
+    font-size: 2.5em;
 }
 
 h2 {
@@ -34,59 +37,74 @@ h2 {
 
 figure img {
     float: right;
+    border-radius: 0.5em;
 }
 
 p {
-    color : #000;
+    color: #000;
 }
 
-/*MODIFICATION: suppression*/
+figure {
+    padding: 0.4em;
+    margin: 0.1em;
+    background-color: #1875c7;
+    border-radius: 0.5em;
+}
 
+figure figcaption {
+    color: #f2f2f2;
+}
+
+
+/*MODIFICATION: suppression*/
+/*
 figure img {
     float: right;
 }
 
 para {
-    color : #000;
+    color: #000;
 }
+*/
+
 
 /*Modifications Hoel*/
 
 
-logo{
-    min-width: 600px;
-}
 
 /*MODIFICATION: navigation*/
+
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #1875c7;
-  cursor: default;
-  background-color: #f2f2f2;
-  border: 1px solid #ddd;
-  border-bottom-color: transparent;
+    color: #1875c7;
+    cursor: default;
+    background-color: #f2f2f2;
+    border: 0;
 }
 
-.nav-tabs > li > a{
-  color: #f2f2f2;
-  cursor: default;
-  background-color: #1875C7;
-  border: 0 solid #fff;
-  border-bottom-color: transparent;
+.nav-tabs > li > a {
+    color: #f2f2f2;
+    cursor: default;
+    background-color: #1875C7;
+    border: 0 solid #fff;
+    border-bottom-color: transparent;
 }
 
 .nav-tabs > li > a:hover,
 .nav-tabs > li > a:focus {
-  color: #1875c7;
-  cursor: default;
-  background-color: #f2f2f2;
-  border: 0 solid #ddd;
-  border-bottom-color: transparent;
+    color: #1875c7;
+    cursor: default;
+    background-color: #f2f2f2;
+    border: 0 solid #ddd;
+    border-bottom-color: transparent;
 }
 
 
+
+
 /*----------MODIFICATIONS ENORA---------------*/
+
 p {
     text-align: justify;
 }
@@ -101,4 +119,11 @@ main {
 
 dl {
     text-align: justify;
+}
+
+.test > li > a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 4px 4px;
 }
